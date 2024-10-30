@@ -1,0 +1,58 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Sharik Khan Jr.",
+  "alternativeName": "Kaleemuddeen",
+  "birthDate": "1995-06-07",
+  "birthPlace": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ashrafpura, near Jagdamba School",
+      "addressLocality": "Achalpur",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "India"
+    }
+  },
+  "occupation": "Actor, Filmmaker, Public Figure",
+  "url": "https://www.sharikkhanjr.com", // Replace with your actual website
+  "sameAs": [
+    "https://www.instagram.com/sharik.khan.jr/profilecard/?igsh=b3pobDZtZGNxanNo",
+    "https://www.facebook.com/Sharikkhanjr1"
+  ],
+  "alumniOf": "Rehmani Junior College, Achalpur, Maharashtra",
+  "works": [
+    {
+      "@type": "Movie",
+      "name": "Kahan Shuru Kahan Khatam",
+      "director": "Sharik Khan Jr.",
+      "datePublished": "2024",
+      "genre": "Drama",
+      "description": "A heart-wrenching tale of love and loss."
+    },
+    {
+      "@type": "TVSeries",
+      "name": "Taarak Mehta Ka Ooltah Chashmah",
+      "datePublished": "2008",
+      "episode": "The New Neighbor",
+      "season": 1,
+      "role": "Guest Star"
+    },
+    {
+      "@type": "Movie",
+      "name": "Lakeer Ka Fakeer",
+      "datePublished": "2013",
+      "genre": "Action",
+      "description": "A thrilling adventure filled with twists and turns."
+    }
+    // Add more works here
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+919503123294"
+    }
+  ]
+}
+</script>

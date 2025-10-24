@@ -2,114 +2,161 @@
 <html lang="en">
 <head>
   <title>Contact | Sharik Khan Jr</title>
-  <meta name="description" content="Contact Sharik Khan Jr - Indian independent musical artist, rapper and actor. Get in touch on Email, WhatsApp, Instagram, Facebook, or YouTube for bookings, collabs, and music projects!" />
+  <meta name="description" content="Contact Sharik Khan Jr - Indian independent musical artist, rapper, singer and actor. Get in touch for bookings, collaborations, and enquiries." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f8fc;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: linear-gradient(120deg, #e9f1fa 0%, #e0e7f4 100%);
       margin: 0; padding: 0;
-      color: #1b2945;
       min-height: 100vh;
     }
-    .container {
-      max-width: 440px;
+    .contact-card {
+      max-width: 430px;
+      margin: 36px auto 0 auto;
       background: #fff;
-      margin: 40px auto 0 auto;
-      border-radius: 18px;
-      box-shadow: 0 2px 24px #c9d6eb44;
-      padding: 28px 18px 32px 18px;
+      border-radius: 22px;
+      box-shadow: 0 3px 30px #b0d7fa44;
+      padding: 32px 20px 28px 20px;
+      position: relative;
+    }
+    .avatar {
+      width: 98px;
+      height: 98px;
+      display: block;
+      margin: -60px auto 11px auto;
+      border-radius: 50%;
+      border: 4px solid #2196F3;
+      box-shadow: 0 5px 20px #99d1fa66;
+      object-fit: cover;
+      background: #e2eafc;
     }
     h1 {
+      text-align: center;
       color: #003c82;
+      font-family: 'Montserrat', Arial, sans-serif;
+      letter-spacing: 1.3px;
+      font-size: 2rem;
       margin-bottom: 8px;
-      text-align: center;
     }
-    p {
+    .brief-msg {
+      font-size: 16px;
+      color: #284869;
+      margin-bottom: 12px;
       text-align: center;
-      font-size: 15px;
+      padding: 0 4px;
+      line-height: 1.7;
     }
-    .links {
-      margin: 20px 0;
+    .contact-list {
+      margin: 30px 0 20px 0;
       padding: 0;
       list-style: none;
       text-align: center;
     }
-    .links li {
-      margin: 13px 0;
+    .contact-list li {
+      margin: 16px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .links a {
-      padding: 10px 18px;
-      border-radius: 5px;
+    .contact-btn {
+      background: linear-gradient(90deg,#2196f3 80%, #2252aa 120%);
+      border: none;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 600;
+      box-shadow: 0 2px 14px #babeff22;
+      margin: 4px 7px;
       text-decoration: none;
-      font-size: 15px;
-      background: #f0f5ff;
-      transition: 0.2s;
-      color: #1b2945;
-      border: 1px solid #cde3fd;
       display: inline-block;
-      min-width: 120px;
+      letter-spacing: .6px;
+      transition: box-shadow 0.14s,bg 0.14s;
+      position: relative;
     }
-    .links a:hover {
-      background: #daeaff;
-      color: #1952b6;
-      border: 1px solid #8cbeeb;
+    .contact-btn:hover {
+      background: linear-gradient(90deg,#2252aa,#2196f3 80%);
+      color: #fff;
+      box-shadow: 0 4px 20px #79b3fa39;
+    }
+    .iconify {
+      font-size: 18px;
+      margin-right: 7px;
+      vertical-align: middle;
     }
     .whatsapp-btn {
-      background: #25d366;
+      background: linear-gradient(90deg,#25d366 60%,#128c7e 110%);
       color: #fff;
-      border: none;
-      padding: 12px 26px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      display: block;
-      width: 90%;
-      margin: 22px auto 0 auto;
-      transition: 0.2s;
-      text-align: center;
+      font-size: 17px;
+      border-radius: 7px;
+      padding: 14px 25px;
+      margin: 0 auto;
+      font-weight: bold;
+      box-shadow: 0 2px 14px #46f59922;
     }
     .whatsapp-btn:hover {
-      background: #1abb5b;
+      background: linear-gradient(90deg,#1eba57,#25d366 80%);
+      color: #fff;
+    }
+    .go-home {
+      display: block;
+      margin: 38px auto 0 auto;
+      width: 90%;
+      text-align: center;
+      background: linear-gradient(90deg,#2196f3 60%, #2252aa 120%);
+      color: #fff;
+      padding: 13px 0;
+      border-radius: 7px;
+      text-decoration: none;
+      font-size: 16.5px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-family: 'Montserrat', Arial, sans-serif;
+      box-shadow:0 2px 12px #84bffc33;
+      transition: 0.18s;
+    }
+    .go-home:hover {
+      background: linear-gradient(90deg,#2252aa,#2196f3 85%);
+      color: #fff;
+    }
+    @media (max-width:540px){
+      .contact-card {margin:20px 7px;padding:16px 2vw}
+      h1{font-size:1.25rem;}
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Contact Sharik Khan Jr</h1>
-    <p>
-      Bookings, collabs, media enquiries aur music-related baaton ke liye,
-      seedha connect karo social handles ya WhatsApp par! Hamesha music aur energy se connect rehna — let’s make great music together!
-    </p>
+  <div class="contact-card">
 
-    <ul class="links">
+    <img class="avatar" src="https://raw.githubusercontent.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/main/Screenshot_2025_1024_151604.jpg" alt="Sharik Khan Jr photo"/>
+
+    <h1>Contact Sharik Khan Jr</h1>
+    <div class="brief-msg">
+      For bookings, collaborations, media inquiries, ya direct baat ke liye kisi bhi platform par connect ho jao.<br>
+      Let's make music and moments together!
+    </div>
+
+    <ul class="contact-list">
+
       <li>
-        <a href="mailto:sharikk955@gmail.com" target="_blank">
-          Email: sharikk955@gmail.com
-        </a>
+        <a class="contact-btn" href="mailto:sharikk955@gmail.com" target="_blank">📧 Email</a>
       </li>
       <li>
-        <a href="https://www.instagram.com/sharik.khan.jr?igsh=b3pobDZtZGNxanNo" target="_blank">
-          Instagram
-        </a>
+        <a class="contact-btn" href="https://www.instagram.com/sharik.khan.jr?igsh=b3pobDZtZGNxanNo" target="_blank">📸 Instagram</a>
+        <a class="contact-btn" href="https://www.facebook.com/Sharikkhanjr1" target="_blank">📘 Facebook</a>
       </li>
       <li>
-        <a href="https://www.facebook.com/Sharikkhanjr1" target="_blank">
-          Facebook
-        </a>
+        <a class="contact-btn" href="https://youtube.com/@sharikkhanjr?si=dlsEiYYGGwlkFeZ9" target="_blank">▶️ YouTube</a>
       </li>
       <li>
-        <a href="https://youtube.com/@sharikkhanjr?si=dlsEiYYGGwlkFeZ9" target="_blank">
-          YouTube (Official)
-        </a>
+        <a class="whatsapp-btn" href="https://wa.me/9503123294" target="_blank">💬 WhatsApp</a>
       </li>
     </ul>
 
-    <a class="whatsapp-btn"
-       href="https://wa.me/9503123294"
-       target="_blank">
-      Message on WhatsApp
-    </a>
+    <a class="go-home" href="index.html">← Back to Home</a>
   </div>
 </body>
 </html>

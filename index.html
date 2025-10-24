@@ -7,27 +7,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {background: #f4f6fb;font-family: 'Segoe UI', Arial, Helvetica, sans-serif;margin: 0;padding: 0;}
-    .main-card {background: #fff;max-width: 540px;margin: 32px auto 24px auto;padding: 32px 18px 26px 18px;border-radius: 16px;box-shadow: 0 4px 22px #c2c6ef47, 0 2px 8px #e0e1ee;}
-    .logo {width: 44px; height: 44px;border-radius: 12px;margin-top:-14px;margin-bottom: 7px;box-shadow: 0 2px 12px #b5c7fb3b;}
-    .profile-img {width: 98px;height: 98px;object-fit: cover;border-radius: 50%;border: 2.5px solid #233871;margin-bottom: 12px;margin-top: 5px;box-shadow:0 4px 16px #23387135;}
-    h1 { color: #223685; margin-bottom: 3px;}
-    .subtitle {color: #3c4471; font-size:1.1em; margin-bottom:12px;}
+    .main-card {background: #fff;max-width: 540px;margin: 32px auto 18px auto;padding: 32px 18px 26px 18px;border-radius: 16px;
+      box-shadow: 0 4px 22px #c2c6ef47, 0 2px 8px #e0e1ee;}
+    .logo {width: 44px;height: 44px;border-radius: 12px;margin-top:-14px;margin-bottom: 7px;box-shadow: 0 2px 12px #b5c7fb3b;}
+    .profile-img {width: 98px;height: 98px;object-fit: cover;border-radius: 50%;border: 2.5px solid #233871;margin-bottom: 12px;
+      margin-top: 5px;box-shadow:0 4px 16px #23387135;}
+    h1 {color: #223685;margin-bottom: 3px;}
+    .subtitle {color: #3c4471;font-size:1.1em;margin-bottom:12px;}
     .social-btns {margin: 8px 0 0 0;display: flex;gap: 11px;}
     .social-btn {display: inline-block;padding: 7px 18px;border-radius: 22px;background: #253d83;color: #fff;font-size: 1em;letter-spacing: 0.01em;transition: background 0.2s;text-decoration: none;font-weight: 500;box-shadow:0 2px 6px #23387136,0 1px 2px #e3e8fa;}
     .social-btn:hover {background: #3b527f;}
-    .main-section {background: #fff8;padding:26px 10px 18px 10px;max-width: 540px;margin: 12px auto 25px auto;border-radius: 16px;box-shadow: 0 1px 9px #c2c6ef18;}
-    h2 {color: #2957e4;font-size: 1.07em;margin-bottom: 4px;margin-top:12px;}
-    ul {margin-top:4px;margin-bottom:12px;padding-left:13px;}
-    li {margin-bottom: 2px;font-size:1.02em;}
-    .contact-block {background: #e5ebfa;border-radius: 8px;box-shadow: 0 1px 2px #dadada77;padding: 5px 12px 8px 12px;margin-top: 11px;margin-bottom: 0;}
-    .contact-block li {font-size:0.99em;}
-    .foot {margin: 19px auto 7px auto;font-size: 0.99em;color: #8a8ba4;text-align: center;}
-    @media(max-width:650px) {.main-card,.main-section{max-width:99vw;padding:7vw 3vw 7vw 3vw;}}
+    .namedetail {background:#e6edfe;border-radius:10px;padding:10px 15px;margin:5px 0 22px 0;box-shadow:0 1.5px 9px #bed4ff17;}
+    .namedetail div {margin-bottom:2.5px;font-size:1.06em;}
+    .bio-section {background: #fff; max-width: 540px; margin: 20px auto 16px auto; border-radius: 13px; box-shadow: 0 1.5px 9px #bed4ff22; padding:22px 20px 17px 20px;}
+    .bio-section h2 {margin:14px 0 3px 0;font-size: 1.07em;color: #2957e4;}
+    .bio-section ul {padding-left: 15px;margin-bottom: 9px;}
+    .bio-section li {margin-bottom: 3px;}
+    .label {font-weight:600;color:#1a367e; font-size:1.04em;}
+    .number-step {display:inline-block;width:28px;height:28px;border-radius:13px;background:#2957e4;color:#fff;
+      text-align:center;line-height:29px;margin-right:7px;font-weight:600;box-shadow:0 2px 8px #2957e440;}
+    .contact-block {background: #e7f0ff;border-radius:8px;box-shadow: 0 2px 8px #d0e5ff34;padding: 6px 13px 10px 13px;margin: 12px 0 0 0;}
+    .contact-block li {font-size:1.03em;}
+    .foot {margin: 26px auto 12px auto;font-size: 0.97em;color: #97a4b8;text-align:center;}
+    @media(max-width:650px) {
+      .main-card, .bio-section{max-width:98vw;padding:6vw 3vw 6vw 3vw;}
+      .namedetail{padding:6vw 4vw;}
+    }
   </style>
 </head>
 <body>
+  <!-- TOP PROFILE CARD -->
   <div class="main-card">
-    <img class="logo" alt="Logo" src="https://cdn-icons-png.flaticon.com/512/565/565547.png" />
+    <img class="logo" alt="Logo" src="https://cdn-icons-png.flaticon.com/512/565/565547.png"/>
     <div style="width:100%;text-align:center;">
       <img class="profile-img" alt="Sharik Khan Jr" src="https://randomuser.me/api/portraits/men/45.jpg" />
     </div>
@@ -40,39 +51,65 @@
       <a href="https://youtube.com/@sharikkhanjr" class="social-btn" target="_blank">YouTube</a>
       <a href="https://open.spotify.com/artist/1qKmv5pyCZ03vzncwE2pF3" class="social-btn" target="_blank">Spotify</a>
     </div>
+    <div class="namedetail">
+      <div><span class="label">Public Stage Name:</span> Sharik Khan Jr</div>
+      <div><span class="label">Government Name:</span> Kaleemuddeen</div>
+    </div>
   </div>
 
-  <!-- YE SAB CARD KE NICHE SECTIONS ME ADD KARO! -->
-  
-  <div class="main-section">
-    <h2>About</h2>
+  <!-- FULL BIOGRAPHY SECTIONS -->
+  <div class="bio-section">
+    
+    <div><span class="number-step">1</span> <span class="label">About</span></div>
     <ul>
-      <li><b>Pura Naam:</b> Kaleemuddeen</li>
-      <li><b>Stage Name:</b> Sharik Khan Jr</li>
-      <li><b>Date of Birth:</b> 07 June 1995</li>
-      <li><b>Home:</b> Achalpur, Maharashtra, India</li>
-      <li><b>School:</b> Rahmaniya High School</li>
-      <li><b>Profession:</b> Musical Artist, Rapper, Singer, Actor, and Filmmaker</li>
+      <li><b>Date of Birth:</b> 7 June 1995</li>
+      <li><b>Birthplace:</b> Achalpur, Maharashtra, India</li>
+      <li><b>Nationality:</b> Indian</li>
+      <li><b>Profession:</b> Actor, Director, Music Artist</li>
+      <li>Known for: <b>Are Kya Bolti Meri Achalpur Public</b>, <b>Yaha Per Hai Mera Shaher Achalpur</b>, <b>Ye Game Mera</b></li>
     </ul>
-    <h2>Musical Journey</h2>
+    
+    <div><span class="number-step">2</span> <span class="label">Early Life & Family</span></div>
     <ul>
-      <li>Career start &amp; rap song "Are Kya Bolti Meri Achalpur Public" (2024)</li>
-      <li>2013 me "Lakher Ka Fakir" movie me bhi nazar aaye.</li>
+      <li>Father: Mr. Naseeruddeen</li>
+      <li>Mother: Mrs. Shirin Parveen</li>
+      <li>Brothers: Naushad Khan, Irshad Khan Jr</li>
+      <li>Sister: Uzma Parveen</li>
+      <li>Supportive family background, always backed Sharik's creative journey.</li>
     </ul>
-    <h2>Family</h2>
+
+    <div><span class="number-step">3</span> <span class="label">Education</span></div>
     <ul>
-      <li><b>Father:</b> Naseeruddeen</li>
-      <li><b>Mother:</b> Shirin Parveen</li>
-      <li><b>Brothers:</b> Naushad Khan, Irshad Khan Jr</li>
-      <li><b>Sister:</b> Uzma Parveen</li>
+      <li>School: Rehmaniya High School, Achalpur, Maharashtra</li>
     </ul>
-    <h2>Achievements</h2>
+
+    <div><span class="number-step">4</span> <span class="label">Musical & Acting Career</span></div>
+    <ul>
+      <li>Started career with passion for rapping and hip hop music.</li>
+      <li>Debut success with popular rap track <b>Are Kya Bolti Meri Achalpur Public</b>.</li>
+      <li>Songs & albums available on: YouTube, Spotify, Gaana, JioSaavn, and more.</li>
+      <li>2013: Appeared in the film “Lakher Ka Fakir.”</li>
+      <li>Recognized for blending unique style, energy, and Achalpur city pride.</li>
+    </ul>
+
+    <div><span class="number-step">5</span> <span class="label">Achievements</span></div>
     <ul>
       <li>Official Artist Channel: <a href="https://youtube.com/@sharikkhanjr" target="_blank">YouTube</a></li>
-      <li>Songs: Gaana, Spotify, JioSaavn, etc.</li>
+      <li>Multiple live performances at music festivals.</li>
+      <li>Inspired local youth with distinctive rap and energetic performances.</li>
     </ul>
+
+    <div><span class="number-step">6</span> <span class="label">Popular Songs</span></div>
+    <ul>
+      <li>Are Kya Bolti Meri Achalpur Public (2024)</li>
+      <li>Yaha Per Hai Mera Shaher Achalpur</li>
+      <li>Ye Game Mera</li>
+      <li>Lakher Ka Fakir (Film Appearance, 2013)</li>
+      <li>More songs available on Spotify, JioSaavn, Gaana, etc.</li>
+    </ul>
+
     <div class="contact-block">
-      <h2>Contact</h2>
+      <div><span class="label">Contact</span></div>
       <ul>
         <li><b>Phone:</b> +919503123294</li>
         <li><b>Email:</b> contact@sharikkhanjr.com</li>

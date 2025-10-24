@@ -47,7 +47,7 @@ Yeh group Maharashtra ke alawa MP aur dusre states tak active hai aur logon ki h
 
 - [Instagram](https://www.instagram.com/sharik.khan.jr/)
 - [YouTube](https://www.youtube.com/@sharikkhanjr)
-- [Spotify](https://open.spotify.com/artist/sharik-khan-jr)
+- [Spotify](https://open.spotify.com/artist/48wk6a7QLT5DGrGijhJDm3)
 - [Music on Amazon](https://music.amazon.in/artists/B0D37R8HZ1/sharik-khan-jr)
 - [Apple Music](https://music.apple.com/in/artist/sharik-khan-jr/1744501517)
 - [Boomplay](https://www.boomplay.com/artists/89861955)

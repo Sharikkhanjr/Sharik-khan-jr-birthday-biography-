@@ -7,216 +7,196 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
-      background: #f4f6fb;
-      font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-      margin: 0; padding: 0;
-      color: #222;
-    }
-    .main-card {
-      background: #fff;
-      max-width: 540px;
-      margin: 32px auto 10px auto;
-      padding: 32px 18px 30px 18px;
-      border-radius: 16px;
-      box-shadow: 0 4px 24px #c2c6ef47, 0 2px 8px #e0e1ee;
-      text-align: center;
-    }
-    .logo {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      margin-top: -14px;
-      margin-bottom: 10px;
-      box-shadow: 0 2px 15px #b5c7fb3b;
-      display: inline-block;
-    }
-    .profile-img {
-      width: 110px;
-      height: 110px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #233871;
-      margin-bottom: 15px;
-      box-shadow: 0 6px 18px #23387150;
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+      padding: 20px 15px;
     }
     h1 {
-      color: #223685;
-      margin-bottom: 6px;
-      font-size: 2.2em;
-    }
-    .subtitle {
-      color: #3c4471;
-      font-size: 1.1em;
-      margin-bottom: 16px;
-    }
-    .social-btns {
-      margin: 10px 0 0 0;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-    }
-    .social-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 26px;
-      background: #253d83;
-      color: #fff;
-      font-size: 1em;
-      letter-spacing: 0.02em;
-      transition: background 0.3s;
-      text-decoration: none;
-      font-weight: 600;
-      box-shadow: 0 2px 9px #23387155, 0 1px 3px #e3e8fa;
-      min-width: 110px;
-      text-align: center;
-    }
-    .social-btn:hover {
-      background: #3b527f;
-    }
-    .content-section {
-      max-width: 600px;
-      margin: 25px auto 35px auto;
-      background: white;
-      padding: 25px 28px 20px 28px;
-      border-radius: 18px;
-      box-shadow: 0 1.5px 18px #bed4ff44;
-    }
-    .section-header {
-      font-size: 1.25em;
-      color: #2a55e5;
-      border-bottom: 1.3px solid #a5baffaa;
-      padding-bottom: 5px;
-      margin-bottom: 12px;
+      color: #333;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
       font-weight: 700;
     }
-    ul {
-      margin: 5px 0 15px 18px;
-      font-size: 1em;
-      color: #2e3347dd;
-    }
-    li {
-      margin: 5px 0;
-    }
-    .highlight-name {
+    h2 {
+      color: #555;
+      margin-top: 30px;
+      margin-bottom: 10px;
       font-weight: 600;
-      font-size: 1.07em;
-      background-color: #dce5ff;
-      padding: 8px 12px;
-      margin-bottom: 18px;
-      border-radius: 11px;
-      color: #274389;
-      text-align: left;
-      width: fit-content;
     }
-    .contact-info {
-      background: #d9e9ff;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+    }
+    th, td {
       padding: 12px 15px;
-      border-radius: 10px;
-      box-shadow: 0 1px 3px #b4c7fe;
-      font-size: 1.05em;
-      color: #2a3b7c;
+      border: 1px solid #ddd;
+      text-align: left;
     }
-    .contact-info b {
-      color: #1f2b62;
+    th {
+      background-color: #f9f9f9;
+      font-weight: 700;
+      color: #444;
     }
-    .footer {
-      font-size: 0.97em;
-      color: #97a4b8;
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid #ddd;
+      margin: 20px 0;
+    }
+    p {
+      font-size: 1.1em;
+      font-weight: 500;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    .urgent {
+      color: #c62828;
+      font-weight: bold;
+      border: 2px solid #c62828;
+      padding: 10px;
+      background-color: #fde0e0;
       text-align: center;
-      padding-bottom: 18px;
-      letter-spacing: 0.013em;
+      margin: 30px 0 15px 0;
     }
-    @media (max-width: 650px) {
-      .main-card, .content-section {
-        max-width: 98vw;
-        padding: 6vw 4vw 6vw 4vw;
-      }
-      .profile-img {
-        width: 92px;
-        height: 92px;
-      }
+    .highlighted-table th {
+      color: #00796b;
+      background-color: #e0f7fa;
+      text-align: center;
+    }
+    .center-text {
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <div class="main-card">
-    <img class="logo" alt="Logo" src="https://cdn-icons-png.flaticon.com/512/565/565547.png" />
-    <div>
-      <img class="profile-img" alt="Sharik Khan Jr" src="https://randomuser.me/api/portraits/men/45.jpg" />
-    </div>
-    <h1>Sharik Khan Jr</h1>
-    <div class="subtitle">
-      Indian independent musical artist, rapper, singer &amp; actor from Achalpur, Maharashtra.
-    </div>
-    <div class="social-btns">
-      <a href="https://www.instagram.com/sharikkhanjr" class="social-btn" target="_blank">Instagram</a>
-      <a href="https://youtube.com/@sharikkhanjr" class="social-btn" target="_blank">YouTube</a>
-      <a href="https://open.spotify.com/artist/1qKmv5pyCZ03vzncwE2pF3" class="social-btn" target="_blank">Spotify</a>
-    </div>
+
+  <h1>Sharik Khan Jr. Official Biography: Actor, Rapper, and Filmmaker</h1>
+
+  <p><strong>Sharik Khan Jr.</strong> woh naam hai jisse public aur Google aapko pehchante hain. Yeh page <strong>Sharik Khan Jr.</strong> ki digital identity ko <strong>ek (unified)</strong> karne ke liye banaya gaya hai. Hum niche ki details se yeh confirm karte hain ki dono Knowledge Panels ek hi entity ke hain.</p>
+
+  <hr />
+
+  <h2>Biography at a Glance</h2>
+  <table>
+    <tr>
+      <th>Stage Name (Public Identity)</th>
+      <td><strong>Sharik Khan Jr.</strong></td>
+    </tr>
+    <tr>
+      <th>Legal Name (ID Proof)</th>
+      <td>Kaleemuddeen</td>
+    </tr>
+    <tr>
+      <th>Born</th>
+      <td>June 7, 1995</td>
+    </tr>
+    <tr>
+      <th>Hometown</th>
+      <td>Achalpur, Maharashtra, India</td>
+    </tr>
+    <tr>
+      <th>Primary Professions</th>
+      <td><strong>Musical Artist, Actor, Director</strong></td>
+    </tr>
+  </table>
+
+  <hr />
+
+  <h2>Family Details</h2>
+  <p>Sharik Khan Jr. ka parivar Achalpur, Maharashtra se hai. Woh teen bhai aur ek behen hain, jismein Sharik Khan Jr. sabse bade hain.</p>
+  <table>
+    <tr>
+      <th>Father's Name</th>
+      <td>Naseeruddin</td>
+    </tr>
+    <tr>
+      <th>Mother's Name</th>
+      <td>Shirin Parveen</td>
+    </tr>
+    <tr>
+      <th>Younger Brother 1</th>
+      <td>Naushad Khan</td>
+    </tr>
+    <tr>
+      <th>Younger Brother 2</th>
+      <td>Irshad Khan Jr.</td>
+    </tr>
+    <tr>
+      <th>Younger Sister</th>
+      <td>Uzma Parveen</td>
+    </tr>
+  </table>
+
+  <hr />
+
+  <h2>Entity Unification (Google Ke Liye Zaroori)</h2>
+  <p>Hum yeh <strong>confirm</strong> karte hain ki neeche di gayi <strong>dono information ek hi insaan</strong> (Sharik Khan Jr. - Legal Name: Kaleemuddeen) ki hai. Hum Google se request karte hain ki woh in dono panels ko <strong>ek (single entity)</strong> mein merge karein:</p>
+
+  <table class="highlighted-table">
+    <thead>
+      <tr>
+        <th>Panel 1: The Musical Artist & Public Figure (Main KP)</th>
+        <th>Panel 2: The Musical Artist (Secondary KP)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Shaamil: Profile Photo, Biography, <strong>Date of Birth</strong>, Instagram, Facebook, aur News.</td>
+        <td>Shaamil: Profile Photo, <strong>Discography (14+ Songs)</strong>, <strong>YouTube Official Artist Channel</strong>, Spotify Music, aur Apple Music.</td>
+      </tr>
+      <tr style="background-color: #f7f7f7;">
+        <td><strong>KP Link:</strong> <a href="https://share.google/g8mOWJvs5zxUah6H9" target="_blank">View Main KP</a></td>
+        <td><strong>KP Link:</strong> <a href="https://share.google/D97xS1Hp2k1NafszH" target="_blank">View Secondary KP</a></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="background-color: #ffebee; color: #c62828; font-weight: bold; font-size: 1.1em; text-align: center;">Goal: Yeh dono panels merge hone chahiye taki Sharik Khan Jr. ki poori aur sahi pehchaan dikhe.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr />
+
+  <h2>Core Digital Connections (Official Links)</h2>
+  <p>Google ko verification ke liye, saare official aur verified links yahan diye gaye hain (yeh sabhi links <strong>ek hi insaan</strong> ko refer karte hain):</p>
+  <ul>
+    <li><strong>Official Instagram:</strong> <a href="https://www.instagram.com/sharik.khan.jr?igsh=N3ExY25sZW9rOTN0" target="_blank">https://www.instagram.com/sharik.khan.jr</a></li>
+    <li><strong>Official Facebook:</strong> <a href="https://www.facebook.com/Sharikkhanjr1" target="_blank">https://www.facebook.com/Sharikkhanjr1</a></li>
+    <li><strong>YouTube Official Artist Channel:</strong> <a href="https://m.youtube.com/channel/UC3xp3Vz2QclkWm0R4w4hOvw" target="_blank">https://m.youtube.com/channel/UC3xp3Vz2QclkWm0R4w4hOvw</a></li>
+    <li><strong>IMDb (Actor/Director Profile):</strong> <a href="https://m.imdb.com/name/nm16157187/?ref_=ext_shr_lnk" target="_blank">https://m.imdb.com/name/nm16157187</a></li>
+    <li><strong>Apple Music Link:</strong> <a href="https://music.apple.com/in/artist/sharik-khan-jr/1744501517" target="_blank">https://music.apple.com/in/artist/sharik-khan-jr/1744501517</a></li>
+    <li><strong>JioSaavn Music Link:</strong> <a href="https://www.jiosaavn.com/artist/sharik-khan-jr-songs/mi,E6Jur0ZQ_" target="_blank">https://www.jiosaavn.com/artist/sharik-khan-jr-songs/mi,E6Jur0ZQ_</a></li>
+    <li><strong>Viral Song Reference:</strong> <em>Are Kya Bolti Meri Achalpur Public</em></li>
+  </ul>
+
+  <hr />
+
+  <div style="color: #c62828; font-weight: bold; border: 2px solid #c62828; padding: 10px; background-color: #fde0e0; text-align: center; margin: 20px 0 15px;">
+    ⚠️ <strong>URGENT REQUEST TO GOOGLE</strong>
   </div>
+  <p style="text-align: center; font-size: 1.1em;">
+    We confirm that all digital assets and career details listed above belong to <strong>one person: Sharik Khan Jr. (Legal Name: Kaleemuddeen)</strong>.
+    We request that the Google Knowledge Graph team please prioritize the <strong>merging of the two existing Knowledge Panels</strong> to consolidate all accurate information under a single, verified entity.
+  </p>
 
-  <div class="content-section">
-    <div class="highlight-name"><b>Public Stage Name:</b> Sharik Khan Jr</div>
-    <div class="highlight-name"><b>Government Proof Name:</b> Kaleemuddeen</div>
-
-    <div class="section-header">About</div>
-    <ul>
-      <li><b>Date of Birth:</b> 7 June 1995</li>
-      <li><b>Birthplace:</b> Achalpur, Maharashtra, India</li>
-      <li><b>Nationality:</b> Indian</li>
-      <li><b>Profession:</b> Actor, Director, Music Artist</li>
-      <li>Known for: <b>Are Kya Bolti Meri Achalpur Public</b>, <b>Yaha Per Hai Mera Shaher Achalpur</b>, <b>Ye Game Mera</b></li>
-    </ul>
-
-    <div class="section-header">Early Life & Family</div>
-    <ul>
-      <li>Father: Mr. Naseeruddeen</li>
-      <li>Mother: Mrs. Shirin Parveen</li>
-      <li>Brothers: Naushad Khan, Irshad Khan Jr</li>
-      <li>Sister: Uzma Parveen</li>
-      <li>Supportive family background, always backed Sharik's creative journey.</li>
-    </ul>
-
-    <div class="section-header">Education</div>
-    <ul>
-      <li>School: Rehmaniya High School, Achalpur, Maharashtra</li>
-    </ul>
-
-    <div class="section-header">Musical & Acting Career</div>
-    <ul>
-      <li>Started career with passion for rapping and hip hop music.</li>
-      <li>Debut success with popular rap track <b>Are Kya Bolti Meri Achalpur Public</b>.</li>
-      <li>Songs & albums available on: YouTube, Spotify, Gaana, JioSaavn, and more.</li>
-      <li>2013: Appeared in the film “Lakher Ka Fakir.”</li>
-      <li>Recognized for blending unique style, energy, and Achalpur city pride.</li>
-    </ul>
-
-    <div class="section-header">Achievements</div>
-    <ul>
-      <li>Official Artist Channel: 
-        <a href="https://youtube.com/@sharikkhanjr" target="_blank">YouTube</a>
-      </li>
-      <li>Multiple live performances at music festivals.</li>
-      <li>Inspired local youth with distinctive rap and energetic performances.</li>
-    </ul>
-
-    <div class="section-header">Popular Songs</div>
-    <ul>
-      <li>Are Kya Bolti Meri Achalpur Public (2024)</li>
-      <li>Yaha Per Hai Mera Shaher Achalpur</li>
-      <li>Ye Game Mera</li>
-      <li>Lakher Ka Fakir (Film Appearance, 2013)</li>
-      <li>More songs available on Spotify, JioSaavn, Gaana, etc.</li>
-    </ul>
-
-    <div class="contact-block">
-      <div class="section-header">Contact</div>
-      <ul>
-        <li><b>Phone:</b> +919503123294</li>
-        <li><b>Email:</b> contact@sharikkhanjr.com</li>
-      </ul>
-    </div>
-  </div>
-  <div class="foot">Made by Sharik Khan Jr • &copy; 2025</div>
 </body>
 </html>

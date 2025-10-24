@@ -34,6 +34,28 @@ Aaj Sharik Khan Jr apni unique style aur energetic stage performances ke liye ma
 - "MERA ATTITUDE", "Are Kya Bolti Meri Achalpur Public" jaise songs ne youth ko inspire kiya.
 - Kaafi live performances aur music releases.
 
+## Discography / Songs
+
+**Latest Songs:**
+- Amravati Meri Pehchan (2025)
+- Kon Hu main (2025)
+- Tere Naam Ki Dhadkan (2025)
+- Main Hu Asli Tu Nakli Chahera (2025)
+- MERA ATTITUDE (2025)
+- Naam Yaad Rakh (2025)
+- Tere Bina Adhoora (2025)
+- Apan ki Yari Apan Ki Jaan (2025)
+- Tu Hai Mera Bhai Meri Jaan (2025)
+- Meri Life Meri Pehchan (2025)
+- Ramzan Ki Rehmat (2025)
+- Roza Aur Rahmat (2025)
+- Ye Game Mera (2025)
+- Teri Meri Yari Sahil Sharik Combo (2025)
+- Yaha Per Hai Mera Shaher Achalpur (2024)
+- Are Kya Bolti Meri Achalpur Public (2024)
+
+**[More on Apple Music](https://music.apple.com/in/artist/sharik-khan-jr/1744501517) [Jiosaavn](https://www.jiosaavn.com/artist/sharik-khan-jr-songs/mi,E6Jur0ZQ_) | [Amazon Music](https://music.amazon.in/artists/B0D37R8HZ1/sharik-khan-jr) | [Boomplay](https://www.boomplay.com/artists/89861955) | [ReverbNation](https://www.reverbnation.com/sharikkhanjr)**
+
 ## Community Work
 
 Sharik Khan Jr ek public helpline service center bhi chalaate hain:  

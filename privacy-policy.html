@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Sharik Khan Jr</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.95;
+        }
+
+        .profile-section {
+            text-align: center;
+            padding: 30px 20px 20px;
+            position: relative;
+            margin-top: -40px;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            object-fit: cover;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: inline-block;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-top: 15px;
+        }
+
+        .profile-title {
+            color: #3498db;
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        .content {
+            padding: 20px 30px 30px;
+            color: #2c3e50;
+            line-height: 1.8;
+        }
+
+        .info-card {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .info-card h3 {
+            color: #3498db;
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-card p, .info-card ul {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .info-card ul {
+            padding-left: 20px;
+        }
+
+        .info-card ul li {
+            margin: 8px 0;
+        }
+
+        .contact-info {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .contact-info p {
+            font-size: 14px;
+            color: #2c3e50;
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #25D366;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 10px 5px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            background: #20BA5A;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 10px 5px;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+
+        .button-group {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+
+        .icon {
+            font-size: 18px;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 12px;
+            padding: 15px;
+            background: #f8f9fa;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                border-radius: 0;
+                margin: -20px;
+            }
+
+            .content {
+                padding: 15px 20px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .whatsapp-btn, .back-btn {
+                width: 90%;
+                margin: 10px auto;
+            }
+
+            .button-group {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Privacy Policy</h1>
+            <p>How we protect your information</p>
+        </div>
+
+        <div class="profile-section">
+            <div class="profile-img"><img src="https://github.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/raw/main/images/Screenshot_2025_1024_151604.jpg" alt="Sharik Khan Jr Profile Logo"></div>
+            <div class="profile-name">Sharik Khan Jr</div>
+            <div class="profile-title">Indian Artist & Performer</div>
+        </div>
+
+        <div class="content">
+            <p style="text-align: center; margin-bottom: 20px;">
+                Your privacy is important to us. This policy explains how we collect, use, and protect your personal information when you visit our website.
+            </p>
+
+            <div class="info-card">
+                <h3><span class="icon">📋</span> Information We Collect</h3>
+                <p>We may collect the following types of information:</p>
+                <ul>
+                    <li><strong>Personal Information:</strong> Name, email address, and contact details when you reach out to us</li>
+                    <li><strong>Usage Data:</strong> Information about how you use our website, including pages visited and time spent</li>
+                    <li><strong>Device Information:</strong> Browser type, IP address, and device information</li>
+                    <li><strong>Social Media:</strong> Information from your interactions on Instagram and other platforms</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3><span class="icon">🎯</span> How We Use Your Information</h3>
+                <p>We use the collected information for:</p>
+                <ul>
+                    <li>Responding to your inquiries and providing customer support</li>
+                    <li>Sending updates about new music releases, shows, and events (only if you subscribe)</li>
+                    <li>Improving our website and user experience</li>
+                    <li>Analyzing website traffic and user behavior</li>
+                    <li>Protecting against fraud and maintaining security</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3><span class="icon">🍪</span> Cookies & Tracking</h3>
+                <p>Our website may use cookies to enhance your browsing experience. Cookies are small files stored on your device that help us:</p>
+                <ul>
+                    <li>Remember your preferences</li>
+                    <li>Understand how you use our website</li>
+                    <li>Provide personalized content</li>
+                </ul>
+                <p>You can disable cookies in your browser settings, but this may affect website functionality.</p>
+            </div>
+
+            <div class="info-card">
+                <h3><span class="icon">🔗</span> Third-Party Services</h3>
+                <p>We use the following third-party services that may collect your information:</p>
+                <ul>
+                    <li><strong>Instagram:</strong> For social media integration and content sharing</li>
+                    <li><strong>YouTube:</strong> For embedded music videos</li>
+                    <li><strong>Spotify:</strong> For music streaming links</li>
+                    <li><strong>WhatsApp:</strong> For direct communication</li>
+                    <li><strong>Analytics Tools:</strong> To understand website traffic</li>
+                </ul>
+                <p>These services have their own privacy policies that we encourage you to review.</p>
+            </div>
+
+            <div class="info-card">
+                <h3><span class="icon">🔒</span> Data Protection</h3>
+                <p>We take your privacy seriously and implement appropriate security measures to protect your personal information. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+            </div>
+
+            <div class="info-card">
+                <h3><span class="icon">👤</span> Your Rights</h3>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access the personal information we hold about you</li>
+                    <li>Request correction of inaccurate information</li>
+                    <li>Request deletion of your personal data</li>
+                    <li>Opt-out of marketing communications</li>
+                    <li>Withdraw consent at any time</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3><span class="icon">👶</span> Children's Privacy</h3>
+                <p>Our website is not intended for children under 13 years of age. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
+            </div>
+
+            <div class="info-card">
+                <h3><span class="icon">🔄</span> Changes to This Policy</h3>
+                <p>We may update this privacy policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this policy periodically.</p>
+            </div>
+
+            <div class="contact-info">
+                <h3 style="color: #3498db; margin-bottom: 15px;">📧 Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy or how we handle your data, please feel free to contact us:</p>
+                <p><strong>Email:</strong> <a href="mailto:sharikk955@gmail.com">sharikk955@gmail.com</a></p>
+                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/sharik.khan.jr" target="_blank" rel="noopener noreferrer">@sharik.khan.jr</a></p>
+                <p><strong>Website:</strong> <a href="https://sharikkhanjr.github.io/Sharik-khan-jr-birthday-biography-/" target="_blank" rel="noopener noreferrer">sharikkhanjr.github.io</a></p>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <a href="https://wa.me/919503123294?text=Hi%20Sharik%2C%20I%20have%20a%20question%20about%20Privacy%20Policy" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                <span class="icon">💬</span>
+                WhatsApp Us
+            </a>
+            <a href="https://sharikkhanjr.github.io/Sharik-khan-jr-birthday-biography-/" class="back-btn">
+                <span class="icon">⬅️</span>
+                Back to Home
+            </a>
+        </div>
+
+        <div class="last-updated">
+            Last Updated: October 25, 2025
+        </div>
+    </div>
+</body>
+</html>

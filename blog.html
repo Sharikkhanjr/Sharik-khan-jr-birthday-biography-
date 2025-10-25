@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Latest News & Articles - Sharik Khan Jr</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f4f8;
+      margin: 0;
+      padding: 0;
+      color: #212121;
+    }
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 50px 20px;
+      text-align: center;
+      color: white;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      font-weight: bold;
+    }
+    .header p {
+      margin: 10px 0 0 0;
+      font-size: 1.15rem;
+      opacity: 0.92;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .article-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(60,30,90,0.11);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .article-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 30px rgba(60,30,90,0.2);
+    }
+    .article-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .article-content {
+      padding: 20px;
+    }
+    .article-title {
+      font-size: 1.4rem;
+      color: #2e2472;
+      margin: 0 0 12px 0;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    .article-excerpt {
+      color: #555;
+      font-size: 0.98rem;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+    .article-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.88rem;
+      color: #888;
+    }
+    .read-more {
+      color: #667eea;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .read-more:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      .header h1 { font-size: 2rem; }
+      .articles-grid { gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>📰 Latest News & Articles</h1>
+    <p>Stay updated with the latest from Sharik Khan Jr</p>
+  </div>
+
+  <div class="container">
+    <div class="articles-grid">
+
+      <!-- Article 1 -->
+      <div class="article-card" onclick="location.href='tera-yaar-mera-pyar.html'">
+        <img src="https://yourdomain.com/article-cover.jpg" alt="Tera Yaar Mera Pyar" class="article-img">
+        <div class="article-content">
+          <h2 class="article-title">Tera Yaar Mera Pyar: Cross-Border Friendship in Music</h2>
+          <p class="article-excerpt">
+            Indian artist Sharik Khan Jr. and Pakistani star Farham Jani unite for a heartwarming collaboration set to release on December 12, 2025.
+          </p>
+          <div class="article-meta">
+            <span>📅 Oct 22, 2025</span>
+            <a href="tera-yaar-mera-pyar.html" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article 2 (Add more articles as needed) -->
+      <div class="article-card" onclick="location.href='article2.html'">
+        <img src="https://via.placeholder.com/400x200" alt="Article 2" class="article-img">
+        <div class="article-content">
+          <h2 class="article-title">Coming Soon: Next Article Title</h2>
+          <p class="article-excerpt">
+            Brief description of your next article will appear here. Keep your fans engaged with regular updates.
+          </p>
+          <div class="article-meta">
+            <span>📅 Coming Soon</span>
+            <a href="article2.html" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more article cards by copying the above structure -->
+
+    </div>
+  </div>
+</body>
+</html>

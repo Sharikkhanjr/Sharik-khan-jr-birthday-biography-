@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tera Yaar Mera Pyar: Cross-Border Collaboration of Hearts & Music</title>
+  <meta name="description" content="Indian artist Sharik Khan Jr. and Pakistani star Farham Jani unite for the cross-border song 'Tera Yaar Mera Pyar'. Release info, video, and more." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #212121;
+    }
+    .container {
+      max-width: 760px;
+      margin: 40px auto 80px auto;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 6px 32px rgba(60,30,90,0.13);
+      padding: 30px 26px 44px 26px;
+    }
+    .main-title {
+      font-size: 2.5rem;
+      color: #3b307a;
+      font-weight: bold;
+      margin: 10px 0 10px 0;
+      line-height: 1.12;
+    }
+    .article-meta {
+      color: #666;
+      font-size: 0.98rem;
+      margin-bottom: 14px;
+      margin-top: 2px;
+    }
+    .lead {
+      font-size: 1.18rem;
+      color: #575757;
+      background: #f4f4fa;
+      border-left: 5px solid #3b307a;
+      padding: 12px 18px;
+      margin: 25px 0;
+      border-radius: 8px;
+    }
+    .main-img {
+      width: 100%;
+      max-height: 330px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 20px 0 25px 0;
+      box-shadow: 0 3px 14px rgba(90,30,30,0.06);
+    }
+    h2 {
+      color: #2e2472;
+      font-size: 1.3rem;
+      margin-top: 32px;
+      margin-bottom: 14px;
+      letter-spacing: 0.01em;
+    }
+    .video-embed {
+      margin: 25px 0;
+      text-align: center;
+    }
+    .video-embed iframe {
+      width: 100%;
+      max-width: 415px;
+      height: 235px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(64,32,80,0.09);
+    }
+    p {
+      line-height: 1.67;
+      margin-bottom: 19px;
+    }
+    .info-list {
+      margin: 18px 0;
+      padding: 0;
+      list-style: none;
+    }
+    .info-list li {
+      margin-bottom: 10px;
+      color: #394957;
+      font-size: 1.04rem;
+    }
+    .source-box {
+      background: #f6f7fc;
+      border-radius: 6px;
+      margin: 30px 0 10px 0;
+      padding: 12px 18px;
+      font-size: 0.96rem;
+      color: #60618b;
+      border-left: 4px solid #7b1fa2;
+    }
+    .contact-box {
+      font-size: 0.95rem;
+      margin-top: 35px;
+      padding-top: 15px;
+      border-top: 1px dashed #c6c6e7;
+    }
+    a {
+      text-decoration: none;
+      color: #4253d7;
+      transition: color 0.2s;
+    }
+    a:hover { color: #330077; }
+    @media (max-width: 620px) {
+      .container { padding: 8px 4vw 28px 4vw;}
+      .main-title { font-size: 1.42rem;}
+      h2 { font-size: 1.18rem;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="main-title">
+      Tera Yaar Mera Pyar:<br>
+      Cross-Border Friendship in a New Musical Wave
+    </h1>
+    <div class="article-meta">
+      Achalpur, Maharashtra, India – October 22, 2025
+    </div>
+    <img src="https://yourdomain.com/path-to-collab-cover.jpg" class="main-img" alt="Tera Yaar Mera Pyar Collaboration Image"/>
+    <div class="lead">
+      In a heartwarming blend of art and friendship, Indian and Pakistani youth stars unite for a musical bridge across borders. Sharik Khan Jr. and Pakistani actor Farham Jani team up for the much awaited song: <b>“Tera Yaar Mera Pyar.”</b>
+    </div>
+  
+    <h2>Bridging Borders Through Music</h2>
+    <p>
+      Rising artist <b>Sharik Khan Jr.</b> from Achalpur teams up with <b>Farham Jani</b>—a 15-year-old Pakistani TV actor, TikTok sensation, and popular blogger—for a project that's making waves on both sides of the border.<br>
+      Their collaboration celebrates unity and shared stories, with both artists expressing excitement and mutual respect.
+    </p>
+    <p>
+      Farham Jani recently addressed his fans in a video message: <br>
+      <i>
+        "Assalam alaikum dosto! Main apna pyar Farham Jani, Pakistani TV actor, aur aaj yeh bataane aaya hoon ke Sharik Khan Jr. aur mera naya gaana aane wala hai."
+      </i>
+    </p>
+    <div class="video-embed">
+      <iframe src="https://player.vimeo.com/video/951373200" frameborder="0" allowfullscreen title="Official Announcement"></iframe>
+      <div style="font-size:0.95rem; color:#5a5a7a; margin-top:7px;">
+        Watch the announcement video
+      </div>
+    </div>
+  
+    <h2>Song Highlights & Release Date</h2>
+    <p>
+      The much-anticipated song <b>"Tera Yaar Mera Pyar"</b> is set for release on <b>December 12, 2025</b>.
+      Crafted and written alongside <b>Ayesha Khan Jr.</b>, the song carries emotions and dreams that connect both nations.<br>
+      In addition to Sharik and Farham, the music video features <b>Madam Maya, Ayesha, and Sameer Khan Jr.</b>—promising a vibrant onscreen launch.
+    </p>
+
+    <ul class="info-list">
+      <li>🎵 <b>Streaming on:</b> JioSaavn, Spotify, Apple Music (from release date)</li>
+      <li>🎬 <b>Artists in video:</b> Sharik Khan Jr., Farham Jani, Madam Maya, Ayesha, Sameer Khan Jr.</li>
+      <li>📅 <b>Official Release:</b> December 12, 2025</li>
+    </ul>
+  
+    <div class="source-box">
+      <b>Sources:</b>
+      <ul>
+        <li>Primary: Farham Jani's Official Social Media (Instagram)</li>
+        <li>Secondary: Sharik Khan Jr.'s Official Platforms (<a href="https://instagram.com/sharikkhanjr">Instagram</a>, <a href="#">Twitter</a>)</li>
+      </ul>
+    </div>
+  
+    <div class="contact-box">
+      <b>For media inquiries:</b><br>
+      Contact: Ahfaz Khan<br>
+      Email: <a href="mailto:sharikk955@gmail.com">sharikk955@gmail.com</a><br>
+      City: Achalpur, India
+    </div>
+  </div>
+</body>
+</html>

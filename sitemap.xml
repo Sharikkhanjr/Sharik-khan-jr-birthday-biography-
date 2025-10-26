@@ -2,26 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sharikkhanjr.github.io/Sharik-khan-jr-birthday-biography-/</loc>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://sharikkhanjr.github.io/Sharik-khan-jr-birthday-biography-/about.html</loc>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sharikkhanjr.github.io/Sharik-khan-jr-birthday-biography-/contact.html</loc>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sharikkhanjr.github.io/Sharik-khan-jr-birthday-biography-/songs.html</loc>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://sharikkhanjr.github.io/Sharik-khan-jr-birthday-biography-/gallery.html</loc>
+    <lastmod>2025-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sharikkhanjr.github.io/Sharik-khan-jr-birthday-biography-/privacy-policy.html</loc>
+    <lastmod>2025-10-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://sharikkhanjr.github.io/Sharik-khan-jr-birthday-biography-/tera-yaar-mera-pyar.html</loc>
+    <lastmod>2025-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sharikkhanjr.github.io/Sharik-khan-jr-birthday-biography-/article-sharik-sam.html</loc>
+    <lastmod>2025-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>

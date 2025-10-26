@@ -6,26 +6,69 @@
   <title>समय शाह ने शारिक खान जेआर को दी जन्मदिन की बधाई</title>
   <style>
     body { margin:0; font-family: Arial,sans-serif; background:#fff; color:#222;}
-    .breaking-news { margin: 0 auto; text-align: center; margin-top: 16px; position: relative; }
+    .breaking-news { margin: 0 auto; text-align: center; margin-top: 16px; }
     .breaking-label { display: inline-block; background: #e54242; color: #fff; font-weight: bold; border-radius: 8px; padding: 6px 22px; font-size: 1.07em; animation: blinker 1s linear infinite; margin-bottom: 8px; }
     @keyframes blinker { 50% { opacity: 0.55; } }
     .main-title { color: #fff; background:#2264a7; font-size: 1.65em; font-weight: bold; letter-spacing: 0.01em; text-align: center; margin:0; padding: 18px 12px 8px 12px; line-height: 1.32; border-bottom: 3px solid #fcb900; }
     .news-caption { color: #e7f3ff; background: #2264a7; font-size: 1em; margin: 11px auto 0 auto; max-width: 95vw; padding: 5px 13px; border-radius: 0 0 12px 12px; letter-spacing: 0.02em; }
-    .meta-box { display: flex; justify-content: flex-start; align-items: center; flex-wrap: wrap; color: #444; background: #fff; font-size: 1.05em; padding: 11px 8px 11px 8px; border-bottom: 1px solid #eee; }
-    .meta-box span { margin-right:18px; display: flex; align-items:center; }
-    .meta-icon { margin-right:5px; font-size:1em; opacity:0.8; }
-    .feature-photo { width:100%; max-width:360px; display:block; margin: 16px auto 8px auto; border-radius: 10px; border: 2px solid #e7f3ff; object-fit: cover; }
+    .author-box {
+      margin: 0 auto 10px auto;
+      max-width: 480px;
+      background: #e7f2fa;
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      padding: 13px 16px;
+      box-shadow: 0 2px 8px #e6e9ee33;
+      gap: 15px;
+      position: relative;
+      top:18px;
+      justify-content:center;
+    }
+    .author-photo {
+      width: 54px;
+      height: 54px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      background: #e5ecf8;
+      margin-right: 8px;
+    }
+    .card-txt-bx {line-height:1.3; margin-top:2px;}
+    .card-txt-bx b {font-size:1.13em;}
+    .meta-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      color: #444;
+      background: #fff;
+      font-size: 1.05em;
+      padding: 10px 6px 2px 6px;
+      border-bottom: 1px solid #eee;
+      gap: 21px;
+      margin:16px auto 6px auto;
+      max-width:460px;
+      border-radius:8px;
+    }
+    .meta-box span {display:flex;align-items:center;}
+    .meta-icon { margin-right:5px; font-size:1em; opacity:0.75; }
     .article-content { max-width: 650px; margin: 0 auto; padding: 16px 12px 30px 12px; }
     .section-title { background: #e6f0fd; border-left: 5px solid #175ab3; color: #175ab3; margin: 36px 0 14px 0; padding: 8px 10px; font-weight: bold; font-size: 1.1em; border-radius: 4px 12px 12px 4px; }
     .video-embed { text-align: center; margin: 20px 0; }
-    .samay-photo { display: block; margin: 18px auto; max-width: 180px; border: 3px solid #fcb900; border-radius: 8px; background: #fff; }
     .note-box { background: #fffbe5; border-left: 5px solid #fcb900; padding: 13px 14px; font-size: 1em; margin: 28px 0 16px 0; border-radius: 6px 14px 14px 6px; color: #7a5a00; }
     .info-box { background: #e7f2fa; border-left: 5px solid #32b2df; margin: 26px 0; padding: 13px 14px; border-radius: 7px 12px 12px 7px; color: #13415a; font-size: 0.99em; }
     .whatsapp-btn { display: block; background: #25D366; color: #fff; font-weight: bold; text-decoration: none; text-align: center; padding: 13px; border-radius: 50px; font-size: 1.06em; margin: 24px auto 12px auto; width: 250px; transition: background 0.3s; }
     .whatsapp-btn:hover { background: #128C7E; }
     .contact-btn { display: inline-block; background: #175ab3; color: #fff; text-decoration: none; padding: 9px 22px; margin: 8px 13px 0px 0; border-radius: 30px; font-size: 1em; }
     .footer { text-align: center; color: #bbb; font-size: 0.95em; margin: 40px 0 18px 0; }
-    @media (max-width:650px){ .main-title { font-size:1.09em; padding:10px 3vw 6px 3vw; } .news-caption {font-size: 0.93em;} .feature-photo {max-width:99vw;} .article-content {padding: 9px 2vw 26px 2vw;} }
+    @media (max-width:650px){
+      .main-title { font-size:1.09em; padding:10px 3vw 6px 3vw; }
+      .news-caption {font-size: 0.93em;}
+      .article-content {padding: 9px 2vw 26px 2vw;}
+      .author-box {max-width:98vw;}
+      .meta-box{max-width:96vw;}
+    }
   </style>
 </head>
 <body>
@@ -38,14 +81,27 @@
   <div class="news-caption">
     टीवी एक्टर सैम परजापति ने अपनी वीडियो में दिया बड़ा खुलासा – शारिक खान जेआर के साथ एक नया गाना आ रहा है!
   </div>
+  
+  <!-- Author Card-Box in Centered Style -->
+  <div class="author-box">
+      <img src="https://sharikkhanjr.github.io/Sharik-khan-jr-birthday-biography-/images/Samay%20Shah.jpg" alt="समय शाह" class="author-photo">
+      <div class="card-txt-bx">
+        <b>समय शाह</b><br/>
+        (गोगी, TMKOC)<br/>
+        Popular TV Actor
+      </div>
+  </div>
+
+  <!-- Article meta info below author -->
   <div class="meta-box">
     <span><span class="meta-icon">🗓️</span> प्रकाशित तिथि: 25 अक्टूबर, 2025</span>
     <span><span class="meta-icon">✍️</span> लेखक: शारिक खान जेआर टीम</span>
     <span><span class="meta-icon">⏱️</span> पढ़ने का समय: 5-7 मिनट</span>
     <span><span class="meta-icon">🎵</span> श्रेणी: संगीत समाचार</span>
   </div>
-  <img src="https://sharikkhanjr.github.io/Sharik-khan-jr-birthday-biography-/images/Samay%20Shah.jpg" alt="समय शाह - फीचर फोटो" class="feature-photo" />
 
+  <img src="https://sharikkhanjr.github.io/Sharik-khan-jr-birthday-biography-/images/Samay%20Shah.jpg" alt="समय शाह - फीचर फोटो" class="feature-photo" />
+  
   <div class="article-content">
 
     <p>टीवी जगत का जाना-माना नाम <b>समय शाह</b> (गोगी, <i>Taarak Mehta Ka Ooltah Chashmah</i>) ने इस बार एक बेहद खास वीडियो के जरिए शारिक खान जेआर को उनके जन्मदिन की शुभकामनाएं दी हैं। सैम परजापति के साथ मिलकर नया म्यूजिक प्रोजेक्ट भी रिलीज़ होने जा रहा है, जिससे दोनों सितारों के फैन्स में जबरदस्त एक्साइटमेंट है।</p>
@@ -63,9 +119,6 @@
 
     <div class="section-title">शारिक खान जेआर - नई पीढ़ी के सुपरस्टार</div>
     <p>शारिक खान जेआर ने कम उम्र में अपनी क्रिएटिविटी और म्यूजिक टैलेंट से सभी को इंप्रेस किया। उनके गानों और वीडियो ने इस डिजिटल युग में लाखों युवाओं को इंस्पायर किया है।</p>
-
-    <div class="section-title">समय शाह की खास फोटो</div>
-    <img src="https://sharikkhanjr.github.io/Sharik-khan-jr-birthday-biography-/images/Samay%20Shah.jpg" alt="समय शाह" class="samay-photo" />
 
     <div class="note-box">
       <b>नोट:</b> जब बड़ा कलाकार किसी यूथ टैलेंट को खुले दिल से विश करता है, तो इसका संदेश दूर तक जाता है और नई प्रेरणा जगाता है।

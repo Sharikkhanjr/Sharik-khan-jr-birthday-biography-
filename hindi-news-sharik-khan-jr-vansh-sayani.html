@@ -13,11 +13,27 @@
     <title>बाल वीर टीवी शो के वंश सिहानी ने शारिक खान जेआर को किया विशेष वीडियो से जन्मदिन शुभकामना</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 900px; margin: 20px auto; background: #f9f9f9; color: #333; }
-        .header { background: linear-gradient(135deg, #003c82 0%, #2980b9 100%); padding: 20px; color: #fff; text-align: center; border-bottom: 5px solid #ffc107; }
+        .header { 
+            background: linear-gradient(135deg, #003c82 0%, #2980b9 100%);
+            padding: 10px 20px 20px 20px; /* pehle se kam top-padding kiya */
+            color: #fff;
+            text-align: center;
+            border-bottom: 5px solid #ffc107;
+            position: relative;
+        }
+        .breaking-news { 
+            display: block;
+            background: #ff4444;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
         .header h1 { margin: 0; font-size: 2.5rem; text-shadow: 1px 1px 3px #00000099; }
         .header p { font-size: 1.2rem; opacity: 0.9; margin: 10px 0 0; }
-        .breaking-news { display: inline-block; background: #ff4444; padding: 10px 20px; border-radius: 5px; font-weight: bold; animation: pulse 2s infinite; margin-bottom: 20px; }
-        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
         .meta-info { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; font-size: 0.9rem; color: #555; padding: 10px 0; border-bottom: 1px solid #ddd; margin-bottom: 20px; }
         .meta-info div { display: flex; align-items: center; gap: 8px; }
         .featured-image img { max-width: 100%; border-radius: 10px; box-shadow: 0 12px 30px rgba(0,0,0,0.2); margin-bottom: 30px; }
@@ -59,6 +75,16 @@
             background: #000;
             border-radius: 12px;
             box-shadow: 0 5px 20px #8884;
+        }
+        @media (max-width: 600px) {
+            .header {
+                padding-top: 5px;
+                padding-bottom: 15px;
+            }
+            .breaking-news {
+                margin-top: 0;
+                margin-bottom: 8px;
+            }
         }
     </style>
 </head>

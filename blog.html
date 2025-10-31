@@ -14,88 +14,116 @@
     }
     .header {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      padding: 50px 20px;
+      padding: 48px 20px;
       text-align: center;
       color: white;
     }
     .header h1 {
       margin: 0;
-      font-size: 2.8rem;
+      font-size: 2.2rem;
       font-weight: bold;
     }
     .header p {
       margin: 10px 0 0 0;
-      font-size: 1.15rem;
+      font-size: 1.04rem;
       opacity: 0.92;
     }
     .container {
       max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: 38px auto;
+      padding: 0 12px;
     }
     .articles-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+      gap: 28px;
+      margin-top: 28px;
     }
     .article-card {
       background: white;
-      border-radius: 12px;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(44,38,90,0.12);
       overflow: hidden;
-      box-shadow: 0 4px 20px rgba(60,30,90,0.11);
-      transition: transform 0.3s, box-shadow 0.3s;
+      transition: transform 0.22s, box-shadow 0.22s;
       cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      min-height: 430px;
     }
     .article-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 8px 30px rgba(60,30,90,0.2);
+      transform: translateY(-7px);
+      box-shadow: 0 10px 32px rgba(44,38,90,0.21);
     }
     .article-img {
       width: 100%;
-      height: 200px;
+      height: 180px;
       object-fit: cover;
+      background: #ececec;
+      border-bottom: 1px solid #ececec;
+      display: block;
     }
     .article-content {
-      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 22px 19px 7px 19px;
+      min-height: 200px;
     }
     .article-title {
-      font-size: 1.4rem;
-      color: #2e2472;
+      font-size: 1.19rem;
+      color: #225;
       margin: 0 0 12px 0;
-      font-weight: 600;
-      line-height: 1.3;
+      font-weight: bold;
+      line-height: 1.28;
+      letter-spacing: 0.01em;
     }
     .article-excerpt {
       color: #555;
-      font-size: 0.98rem;
-      line-height: 1.6;
+      font-size: 0.99rem;
+      line-height: 1.5;
       margin-bottom: 15px;
+      flex: 1;
     }
     .article-meta {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 0.88rem;
+      font-size: 0.94rem;
       color: #888;
+      margin-top: 6px;
+    }
+    .article-date {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.97rem;
     }
     .read-more {
       color: #667eea;
       font-weight: 600;
       text-decoration: none;
+      font-size: 0.97rem;
+      margin-left: 18px;
+      transition: color 0.16s;
     }
     .read-more:hover {
+      color: #764ba2;
       text-decoration: underline;
     }
     @media (max-width: 768px) {
-      .header h1 { font-size: 2rem; }
-      .articles-grid { gap: 20px; }
+      .header h1 { font-size: 1.35rem; }
+      .container { padding: 0 3vw; }
+      .articles-grid { gap: 13px; }
+      .article-card { min-height: 360px; }
+      .article-content { padding: 14px 10px 6px 10px; }
+      .article-title { font-size: 1.06rem; }
+      .article-excerpt { font-size: 0.92rem; }
     }
   </style>
 </head>
 <body>
   <div class="header">
-    <h1>📰 Latest News & Articles</h1>
+    <h1>📰 Latest News &amp; Articles</h1>
     <p>Stay updated with the latest from Sharik Khan Jr</p>
   </div>
 
@@ -104,150 +132,140 @@
 
       <!-- Article 1 -->
       <div class="article-card" onclick="location.href='tera-yaar-mera-pyar.html'">
-        <img src="https://yourdomain.com/article-cover.jpg" alt="Tera Yaar Mera Pyar" class="article-img">
+        <img src="https://raw.githubusercontent.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/main/20251025_101320.jpg" alt="Tera Yaar Mera Pyar" class="article-img">
         <div class="article-content">
           <h2 class="article-title">Tera Yaar Mera Pyar: Cross-Border Friendship in Music</h2>
           <p class="article-excerpt">
             Indian artist Sharik Khan Jr. and Pakistani star Farham Jani unite for a heartwarming collaboration set to release on December 12, 2025.
           </p>
           <div class="article-meta">
-            <span>📅 Oct 22, 2025</span>
+            <span class="article-date">📅 Oct 22, 2025</span>
             <a href="tera-yaar-mera-pyar.html" class="read-more">Read More →</a>
           </div>
         </div>
       </div>
 
-      <!-- 1 -->
-<div class="article-card">
-  <img src="https://raw.githubusercontent.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/main/20251025_101320.jpg" alt="Tera Yaar Mera Pyar" class="article-img">
-  <div class="article-content">
-    <h2 class="article-title">Tera Yaar Mera Pyar: Cross-Border Friendship in Music</h2>
-    <p class="article-excerpt">
-      Indian artist Sharik Khan Jr. and Pakistani star Farham Jani unite for a heartwarming collaboration set to release on December 12, 2025.
-    </p>
-    <div class="article-meta">
-      <span class="article-date">📅 Oct 22, 2025</span>
-      <a href="tera-yaar-mera-pyar.html" class="read-more">Read More →</a>
-    </div>
-  </div>
-</div>
+      <!-- Article 2 -->
+      <div class="article-card" onclick="location.href='article-sharik-sam.html'">
+        <img src="https://github.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/raw/main/images/20251025_221129.jpg" alt="Sharik Khan Jr aur Sam Prajapati" class="article-img">
+        <div class="article-content">
+          <h2 class="article-title">शारिक खान जेआर का नया गाना सैम परजापति के साथ</h2>
+          <p class="article-excerpt">टीवी एक्टर सैम परजापति के साथ रोमांचक नया गाना आ रहा है</p>
+          <div class="article-meta">
+            <span class="article-date">📅 Oct 23, 2025</span>
+            <a href="article-sharik-sam.html" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
 
-<!-- 2 -->
-<div class="article-card">
-  <img src="https://github.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/raw/main/images/20251025_221129.jpg" alt="Sharik Khan Jr aur Sam Prajapati" class="article-img">
-  <div class="article-content">
-    <h2 class="article-title">शारिक खान जेआर का नया गाना सैम परजापति के साथ</h2>
-    <p class="article-excerpt">टीवी एक्टर सैम परजापति के साथ रोमांचक नया गाना आ रहा है</p>
-    <div class="article-meta">
-      <span class="article-date">📅 Oct 23, 2025</span>
-      <a href="article-sharik-sam.html" class="read-more">Read More →</a>
-    </div>
-  </div>
-</div>
+      <!-- Article 3 -->
+      <div class="article-card" onclick="location.href='sharik-birthday-samayshah-wish.html'">
+        <img src="https://sharikkhanjr.github.io/Sharik-khan-jr-birthday-biography-/images/Samay%20Shah.jpg" alt="Samay Shah TMKOC Birthday Wish" class="article-img">
+        <div class="article-content">
+          <h2 class="article-title">समय शाह ने Sharik Khan JR को भेजा बर्थडे वीडियो</h2>
+          <p class="article-excerpt">TMKOC के गोगी यानी समय शाह का स्पेशल वीडियो: Sharik Khan JR को दिल से जन्मदिन की शुभकामनाएं</p>
+          <div class="article-meta">
+            <span class="article-date">📅 Oct 24, 2025</span>
+            <a href="sharik-birthday-samayshah-wish.html" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
 
-<!-- 3 -->
-<div class="article-card">
-  <img src="https://sharikkhanjr.github.io/Sharik-khan-jr-birthday-biography-/images/Samay%20Shah.jpg" alt="Samay Shah TMKOC Birthday Wish" class="article-img">
-  <div class="article-content">
-    <h2 class="article-title">समय शाह ने Sharik Khan JR को भेजा बर्थडे वीडियो</h2>
-    <p class="article-excerpt">TMKOC के गोगी यानी समय शाह का स्पेशल वीडियो: Sharik Khan JR को दिल से जन्मदिन की शुभकामनाएं</p>
-    <div class="article-meta">
-      <span class="article-date">📅 Oct 24, 2025</span>
-      <a href="sharik-birthday-samayshah-wish.html" class="read-more">Read More →</a>
-    </div>
-  </div>
-</div>
+      <!-- Article 4 -->
+      <div class="article-card" onclick="location.href='jalil-pathan-ashrafpura-election.html'">
+        <img src="https://sharikkhanjr.github.io/Sharik-khan-jr-birthday-biography-/images/IMG-20251026-WA0004.jpg" alt="Jalil Pathan Election" class="article-img">
+        <div class="article-content">
+          <h2 class="article-title">अचलपुर की राजनीति में नया मोड़: जलील पठान ‘कांग्रेस’ के टिकट पर</h2>
+          <p class="article-excerpt">कांग्रेस के टिकट पर जलील पठान की उम्मीदवारी और उनका समाज सेवा का सफर। पढ़िए पूरी खबर।</p>
+          <div class="article-meta">
+            <span class="article-date">📅 Oct 26, 2025</span>
+            <a href="jalil-pathan-ashrafpura-election.html" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
 
-<!-- 4 -->
-<div class="article-card">
-  <img src="https://sharikkhanjr.github.io/Sharik-khan-jr-birthday-biography-/images/IMG-20251026-WA0004.jpg" alt="Jalil Pathan Election" class="article-img">
-  <div class="article-content">
-    <h2 class="article-title">अचलपुर की राजनीति में नया मोड़: जलील पठान ‘कांग्रेस’ के टिकट पर</h2>
-    <p class="article-excerpt">कांग्रेस के टिकट पर जलील पठान की उम्मीदवारी और उनका समाज सेवा का सफर। पढ़िए पूरी खबर।</p>
-    <div class="article-meta">
-      <span class="article-date">📅 Oct 26, 2025</span>
-      <a href="jalil-pathan-ashrafpura-election.html" class="read-more">Read More →</a>
-    </div>
-  </div>
-</div>
+      <!-- Article 5 -->
+      <div class="article-card" onclick="location.href='Ammar-Aatif-Ashrafpura-%20nagarsevak-election.html'">
+        <img src="https://raw.githubusercontent.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/main/images/Ammar%20Aatif.jpg" alt="Ammar Aatif Election" class="article-img">
+        <div class="article-content">
+          <h2 class="article-title">अमर आतिफ: अचलपुर की शान, नगर सेवक चुनाव</h2>
+          <p class="article-excerpt">अपक्ष उम्मीदवार अमर आतिफ की उम्मीदवारी, उनका समाज सेवा का सफर, और चुनावी माहौल का पूरा हाल जानें।</p>
+          <div class="article-meta">
+            <span class="article-date">📅 Oct 27, 2025</span>
+            <a href="Ammar-Aatif-Ashrafpura-%20nagarsevak-election.html" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
 
-<!-- 5 -->
-<div class="article-card">
-  <img src="https://raw.githubusercontent.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/main/images/Ammar%20Aatif.jpg" alt="Ammar Aatif Election" class="article-img">
-  <div class="article-content">
-    <h2 class="article-title">अमर आतिफ: अचलपुर की शान, नगर सेवक चुनाव</h2>
-    <p class="article-excerpt">अपक्ष उम्मीदवार अमर आतिफ की उम्मीदवारी, उनका समाज सेवा का सफर, और चुनावी माहौल का पूरा हाल जानें।</p>
-    <div class="article-meta">
-      <span class="article-date">📅 Oct 27, 2025</span>
-      <a href="Ammar-Aatif-Ashrafpura-%20nagarsevak-election.html" class="read-more">Read More →</a>
-    </div>
-  </div>
-</div>
+      <!-- Article 6 -->
+      <div class="article-card" onclick="location.href='achalpur-nagar-parishad-nagardhyaksh-news-2025.html'">
+        <img src="https://raw.githubusercontent.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/main/images/IMG_20251028_000735.jpg" alt="Achalpur Nagar Parishad Election" class="article-img">
+        <div class="article-content">
+          <h2 class="article-title">अचलपुर नगर परिषद: अगले नगर अध्यक्ष की रेस</h2>
+          <p class="article-excerpt">चुनावी माहौल, जनता की राय, वायरल Instagram Reel, और दोनों नेताओं की सियासी रणनीति – पढ़िए पूरी रिपोर्ट।</p>
+          <div class="article-meta">
+            <span class="article-date">📅 Oct 28, 2025</span>
+            <a href="achalpur-nagar-parishad-nagardhyaksh-news-2025.html" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
 
-<!-- 6 -->
-<div class="article-card">
-  <img src="https://raw.githubusercontent.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/main/images/IMG_20251028_000735.jpg" alt="Achalpur Nagar Parishad Election" class="article-img">
-  <div class="article-content">
-    <h2 class="article-title">अचलपुर नगर परिषद: अगले नगर अध्यक्ष की रेस</h2>
-    <p class="article-excerpt">चुनावी माहौल, जनता की राय, वायरल Instagram Reel, और दोनों नेताओं की सियासी रणनीति – पढ़िए पूरी रिपोर्ट।</p>
-    <div class="article-meta">
-      <span class="article-date">📅 Oct 28, 2025</span>
-      <a href="achalpur-nagar-parishad-nagardhyaksh-news-2025.html" class="read-more">Read More →</a>
-    </div>
-  </div>
-</div>
+      <!-- Article 7 -->
+      <div class="article-card" onclick="location.href='hindi-news-sharik-khan-jr-vansh-sayani.html'">
+        <img src="https://raw.githubusercontent.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/main/images/20251027_220519.jpg" alt="Vansh Sihani Birthday" class="article-img">
+        <div class="article-content">
+          <h2 class="article-title">बाल वीर के मानव वंश सिहानी का खास वीडियो</h2>
+          <p class="article-excerpt">देशभर के बच्चों के स्टार – वंश सिहानी (बाल वीर शो) की खास बधाई, वीडियो मैसेज और फैंस की प्रतिक्रिया – पूरा न्यूज़ रिपोर्ट।</p>
+          <div class="article-meta">
+            <span class="article-date">📅 Oct 29, 2025</span>
+            <a href="hindi-news-sharik-khan-jr-vansh-sayani.html" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
 
-<!-- 7 -->
-<div class="article-card">
-  <img src="https://raw.githubusercontent.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/main/images/20251027_220519.jpg" alt="Vansh Sihani Birthday" class="article-img">
-  <div class="article-content">
-    <h2 class="article-title">बाल वीर के मानव वंश सिहानी का खास वीडियो</h2>
-    <p class="article-excerpt">देशभर के बच्चों के स्टार – वंश सिहानी (बाल वीर शो) की खास बधाई, वीडियो मैसेज और फैंस की प्रतिक्रिया – पूरा न्यूज़ रिपोर्ट।</p>
-    <div class="article-meta">
-      <span class="article-date">📅 Oct 29, 2025</span>
-      <a href="hindi-news-sharik-khan-jr-vansh-sayani.html" class="read-more">Read More →</a>
-    </div>
-  </div>
-</div>
+      <!-- Article 8 -->
+      <div class="article-card" onclick="location.href='shakir-dada-achalpur-election-news-2025.html'">
+        <img src="https://raw.githubusercontent.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/refs/heads/main/images/Mohammad%20Shakir%20Hussain.jpg" alt="Shakir Dada Achalpur Election 2025" class="article-img">
+        <div class="article-content">
+          <h2 class="article-title">शाकिर दादा अचलपुर चुनाव न्यूज़ 2025</h2>
+          <p class="article-excerpt">मोहम्मद शाकिर हुसैन – अचलपुर चुनाव 2025 की महत्वपूर्ण खबरें, पोस्टर और रिपोर्ट एक जगह। अब पढ़ें exclusive चुनाव अपडेट।</p>
+          <div class="article-meta">
+            <span class="article-date">📅 Oct 29, 2025</span>
+            <a href="shakir-dada-achalpur-election-news-2025.html" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
 
-<!-- 8 -->
-<div class="article-card">
-  <img src="https://raw.githubusercontent.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/refs/heads/main/images/Mohammad%20Shakir%20Hussain.jpg" alt="Shakir Dada Achalpur Election 2025" class="article-img">
-  <div class="article-content">
-    <h2 class="article-title">शाकिर दादा अचलपुर चुनाव न्यूज़ 2025</h2>
-    <p class="article-excerpt">मोहम्मद शाकिर हुसैन – अचलपुर चुनाव 2025 की महत्वपूर्ण खबरें, पोस्टर और रिपोर्ट एक जगह। अब पढ़ें exclusive चुनाव अपडेट।</p>
-    <div class="article-meta">
-      <span class="article-date">📅 Oct 29, 2025</span>
-      <a href="shakir-dada-achalpur-election-news-2025.html" class="read-more">Read More →</a>
-    </div>
-  </div>
-</div>
+      <!-- Article 9 -->
+      <div class="article-card" onclick="location.href='pinku-tmkoc-sharik-khan-jr-birthday-wish.html'">
+        <img src="https://raw.githubusercontent.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/main/images/IMG_20251029_222732.jpg" alt="Pinku TMKOC Sharik Khan Jr Birthday Wish" class="article-img">
+        <div class="article-content">
+          <h2 class="article-title">बड़ा धमाका! 'पिंकू' ने शारिक खान Jr को दिया अनमोल तोहफा</h2>
+          <p class="article-excerpt">'तारक मेहता का उल्टा चश्मा' के पिंकू (अज़हर शेख) का शारिक खान Jr के लिए खास वीडियो विश जो इंटरनेट पर मचा रहा तहलका। पढ़ें पूरी खबर।</p>
+          <div class="article-meta">
+            <span class="article-date">📅 Oct 30, 2025</span>
+            <a href="pinku-tmkoc-sharik-khan-jr-birthday-wish.html" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
 
-<!-- 9 -->
-<div class="article-card">
-  <img src="https://raw.githubusercontent.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/main/images/IMG_20251029_222732.jpg" alt="Pinku TMKOC Sharik Khan Jr Birthday Wish" class="article-img">
-  <div class="article-content">
-    <h2 class="article-title">बड़ा धमाका! 'पिंकू' ने शारिक खान Jr को दिया अनमोल तोहफा</h2>
-    <p class="article-excerpt">'तारक मेहता का उल्टा चश्मा' के पिंकू (अज़हर शेख) का शारिक खान Jr के लिए खास वीडियो विश जो इंटरनेट पर मचा रहा तहलका। पढ़ें पूरी खबर।</p>
-    <div class="article-meta">
-      <span class="article-date">📅 Oct 30, 2025</span>
-      <a href="pinku-tmkoc-sharik-khan-jr-birthday-wish.html" class="read-more">Read More →</a>
-    </div>
-  </div>
-</div>
+      <!-- Article 10 -->
+      <div class="article-card" onclick="location.href='komal-bhabhi-sharik-khan-jr-birthday-wish.html'">
+        <img src="https://raw.githubusercontent.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/main/images/IMG_20251030_193743.jpg" alt="Komal Bhabhi Sharik Khan Jr Birthday" class="article-img">
+        <div class="article-content">
+          <h2 class="article-title">टीवी की 'कोमल भाभी' ने शारिक खान Jr को भेजा अनमोल तोहफा</h2>
+          <p class="article-excerpt">'तारक मेहता का उल्टा चश्मा' की कोमल भाभी (अंबिका रंजनकर) ने शारिक खान Jr को बर्थडे पर खास वीडियो भेजा जो सोशल मीडिया पर वायरल हो गया। जानिए कैसे यह बधाई बना चर्चा का विषय।</p>
+          <div class="article-meta">
+            <span class="article-date">📅 Oct 30, 2025</span>
+            <a href="komal-bhabhi-sharik-khan-jr-birthday-wish.html" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
 
-<!-- 10 -->
-<div class="article-card">
-  <img src="https://raw.githubusercontent.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/main/images/IMG_20251030_193743.jpg" alt="Komal Bhabhi Sharik Khan Jr Birthday" class="article-img">
-  <div class="article-content">
-    <h2 class="article-title">टीवी की 'कोमल भाभी' ने शारिक खान Jr को भेजा अनमोल तोहफा</h2>
-    <p class="article-excerpt">'तारक मेहता का उल्टा चश्मा' की कोमल भाभी (अंबिका रंजनकर) ने शारिक खान Jr को बर्थडे पर खास वीडियो भेजा जो सोशल मीडिया पर वायरल हो गया। जानिए कैसे यह बधाई बना चर्चा का विषय।</p>
-    <div class="article-meta">
-      <span class="article-date">📅 Oct 30, 2025</span>
-      <a href="komal-bhabhi-sharik-khan-jr-birthday-wish.html" class="read-more">Read More →</a>
     </div>
   </div>
-</div>
+</body>
+</html>
       
       <!-- Article 11 (Add more articles as needed) -->
       <div class="article-card" onclick="location.href='article2.html'">

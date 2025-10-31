@@ -1,136 +1,222 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>टीवी की 'कोमल भाभी' ने शारिक खान जेआर को भेजा अनमोल तोहफा</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            max-width: 900px;
-            margin: 20px auto;
-            background: #f9f9f9;
-            color: #333;
-        }
-        .header {
-            background: linear-gradient(135deg, #003c82 0%, #2980b9 100%);
-            padding: 20px;
-            color: #fff;
-            text-align: center;
-            border-bottom: 5px solid #ffc107;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 2.1rem;
-            text-shadow: 1px 1px 3px #00000099;
-        }
-        .header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin: 10px 0 0;
-        }
-        .breaking-news {
-            display: inline-block;
-            background: #ff4444;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: bold;
-            animation: pulse 2s infinite;
-            margin-bottom: 17px;
-        }
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-        .meta-info {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 24px;
-            font-size: 0.95rem;
-            color: #555;
-            padding: 10px 0;
-            border-bottom: 1px solid #ddd;
-            margin-bottom: 18px;
-        }
-        .meta-info div {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .featured-image img {
-            max-width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 11px 30px rgba(0,0,0,0.17);
-            margin-bottom: 20px;
-        }
-        .content {
-            font-size: 1.07rem;
-            line-height: 1.7;
-            text-align: justify;
-            color: #222;
-        }
-        .content h2 {
-            border-left: 7px solid #ffc107;
-            padding-left: 13px;
-            margin: 20px 0 13px 0;
-            color: #003c82;
-            font-weight: 700;
-        }
-        .content h3 {
-            color: #2980b9;
-            margin: 17px 0 10px 0;
-        }
-        .highlight-box {
-            background: #fff3cd;
-            padding: 14px 16px;
-            border-left: 6px solid #ffc107;
-            margin: 16px 0;
-            font-weight: 600;
-            border-radius: 5px;
-            min-height: 55px;
-        }
-        .quote {
-            font-style: italic;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-left: 6px solid #ffc107;
-            padding: 17px 17px;
-            border-radius: 8px;
-            margin: 25px 0;
-            font-size: 1.13rem;
-            line-height: 1.55;
-        }
-       .cta-section {
-            margin: 27px 0;
-            background: #f0f8ff;
-            border: 2px solid #003c82;
-            border-radius: 8px;
-            text-align: center;
-            padding: 15px;
-        }
-        .footer {
-            font-size: 0.9rem;
-            text-align: center;
-            padding: 16px 12px;
-            border-top: 1px solid #ddd;
-            color: #666;
-            margin-top: 10px;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Responsive News Card</title>
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    margin:0;
+    padding:0;
+}
+.container {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 13px;
+    box-shadow: 0 3px 24px #0001;
+    padding-bottom: 22px;
+    overflow-x: hidden;
+}
+.blue-card-wrap {
+    width:100%;display:flex;justify-content:center;margin:24px 0 14px 0;
+}
+.blue-card {
+    background:linear-gradient(135deg,#03468e 0%,#228ed7 100%);
+    width:100%; max-width:370px;
+    border-radius:13px;
+    box-shadow:0 3px 18px #0001;
+    position:relative;
+    padding:19px 5vw 16px 5vw;
+    margin:0 auto;
+    box-sizing:border-box;
+}
+.blue-card .breaking {
+    position:absolute;
+    left:50%;transform:translateX(-50%);
+    top:-15px;
+    background:#ff4444;
+    color:#fff;
+    font-weight:600;
+    font-size:1rem;
+    border-radius:9px;
+    padding:4px 30px;
+    letter-spacing:.1px;
+    box-shadow:0 1px 5px #0002;
+    animation:pulse 1.6s infinite;
+    white-space:nowrap;
+}
+@keyframes pulse {
+    0%,100%{transform:translateX(-50%) scale(1);}
+    50%{transform:translateX(-50%) scale(1.08);}
+}
+.blue-card .headline {
+    color:#fff;font-size:1.10rem;font-weight:700;line-height:1.4;text-align:center;margin-top:19px;
+}
+.blue-card .summary {
+    color:#e3e8ef;font-size:.93rem;font-weight:400;text-align:center;margin:10px 0 0 0;
+}
+.meta-info {
+    width:100%;max-width:370px;margin:0 auto 12px auto;
+    display:flex;flex-wrap:wrap;justify-content:center;gap:10px 9px;
+    font-size:.99rem;color:#555;
+    border-bottom:1px solid #eee;
+    padding-bottom:6px;
+    box-sizing:border-box;
+}
+.meta-info div {white-space:nowrap;}
+.featured-image {
+    width:100%;
+    display:flex;justify-content:center;margin-top:16px;
+}
+.featured-image img {
+    max-width:360px;width:100%; border-radius:13px;
+    box-shadow:0 9px 22px #0002;
+    display:block;
+}
+.content {
+    font-size:1.07rem;
+    line-height:1.7;
+    text-align:justify;
+    color:#222;
+    padding:0 3vw;
+    margin-top:12px;
+    word-break:break-word;
+}
+.content h2 {
+    border-left:7px solid #ffc107;
+    padding-left:13px;
+    margin:20px 0 13px 0;
+    color:#003c82;
+    font-weight:700;
+}
+.content h3 {
+    color:#2980b9;
+    margin:17px 0 10px 0;
+}
+.highlight-box {
+    background:#fff3cd; padding:14px 16px; border-left:6px solid #ffc107; margin:16px 0; font-weight:600; border-radius:5px; min-height:55px;
+}
+.quote {
+    font-style:italic;
+    background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+    color:white;
+    border-left:6px solid #ffc107;
+    padding:17px 17px;
+    border-radius:8px;
+    margin:25px 0;
+    font-size:1.13rem;
+    line-height:1.55;
+}
+.video-embed {width:100%;display:flex;justify-content:center;margin:24px 0;}
+.video-embed iframe {
+    border-radius:10px;
+    max-width:99vw;
+    width:350px;
+    height:197px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.newsbox-contact {
+    background:#e8f6ff;
+    border-radius:18px;
+    margin:38px 0 0 0;
+    padding:22px 12px;
+    text-align:center;
+    box-shadow:0 3px 10px #00000018;
+    max-width:99vw;
+    overflow-x:hidden;
+}
+.newsbox-contact h3 {
+    color:#003c82;
+    font-weight:700;
+    margin-bottom:13px;
+}
+.newsbox-contact p {
+    font-size:1.08rem;
+    margin-bottom:22px;
+}
+.news-btn {
+    display:inline-block;
+    background:#25D366;
+    color:#fff;
+    font-weight:bold;
+    padding:15px 40px;
+    font-size:1.15rem;
+    border-radius:32px;
+    margin:8px 0 16px 0;
+    box-shadow:0 2px 8px #25D36620;
+    text-decoration:none;
+}
+.ig-btn {
+    display:inline-block;
+    background:#d6249f;
+    color:#fff;
+    font-weight:bold;
+    padding:13px 38px;
+    font-size:1.13rem;
+    border-radius:32px;
+    margin:9px 0;
+    box-shadow:0 2px 8px #d6249f22;
+    text-decoration:none;
+}
+.wa-btn {
+    display:inline-block;
+    background:#22b473;
+    color:#fff;
+    font-weight:bold;
+    padding:13px 38px;
+    font-size:1.13rem;
+    border-radius:32px;
+    margin:9px 10px;
+    box-shadow:0 2px 8px #22b47322;
+    text-decoration:none;
+}
+.newsbox-contact .credit {
+    margin-top: 22px;
+    font-size:1rem; color:#555;
+}
+.newsbox-contact .credit a { color:#006fce;text-decoration:underline;}
+.footer {
+    font-size:0.9rem;
+    text-align:center;
+    padding:16px 12px;
+    border-top:1px solid #ddd;
+    color:#666;
+    margin-top:10px;
+}
+@media (max-width:450px) {
+    .container,
+    .blue-card,
+    .meta-info,
+    .featured-image img,
+    .video-embed iframe {
+        max-width:99vw !important;
+        width:99vw !important;
+    }
+    .content,.newsbox-contact {padding:0 2vw;}
+}
+</style>
 </head>
 <body>
-    <div class="header">
-        <div class="breaking-news">BREAKING NEWS 📢</div>
-        <h1>टीवी की 'कोमल भाभी' ने शारिक खान जेआर को भेजा अनमोल तोहफा</h1>
-        <p>अंबिका रंजनकर (कोमल भाभी) ने शारिक खान जेआर को जन्मदिन पर खास वीडियो संदेश भेजा, जो पूरे सोशल मीडिया पर वायरल हो रहा है।</p>
-    </div>
     <div class="container">
+        <div class="blue-card-wrap">
+          <div class="blue-card">
+            <div class="breaking">BREAKING NEWS 📢</div>
+            <div class="headline">टीवी की 'कोमल भाभी' ने शारिक खान जेआर को भेजा अनमोल तोहफा</div>
+            <div class="summary">अंबिका रंजनकर (कोमल भाभी) ने शारिक खान जेआर को जन्मदिन पर खास वीडियो संदेश भेजा, जो पूरे सोशल मीडिया पर वायरल हो रहा है।</div>
+          </div>
+        </div>
         <div class="meta-info">
-            <div><strong>📅 प्रकाशन तिथि:</strong> 31/10/2025</div>
-            <div><strong>✍️ लेखक:</strong> Yash Wankhade</div>
-            <div><strong>⏱️ पढ़ने का समय:</strong> 8 मिनट</div>
-            <div><strong>📂 श्रेणी:</strong> Entertainment & Music News</div>
+            <div>🗓<b> प्रकाशन तिथि:</b> 31/10/2025</div>
+            <div>✍️<b> लेखक:</b> Yash Wankhade</div>
+            <div>⏱<b> पढ़ने का समय: </b>8 मिनट</div>
+            <div>📂 <b>श्रेणी:</b> Entertainment & Music News</div>
         </div>
         <div class="featured-image">
             <img src="https://github.com/Sharikkhanjr/Sharik-khan-jr-birthday-biography-/blob/main/images/IMG_20251030_193743.jpg?raw=true" alt="Ambika Ranjankar and Sharik Khan Jr Birthday Wish Poster">
@@ -156,9 +242,8 @@
             </p>
 
             <h2>🎬 एक्सक्लूसिव वीडियो यहाँ देखें</h2>
-            <div style="text-align:center; margin: 22px 0;">
-                <!-- Video iframe placeholder -->
-                <iframe src="https://player.vimeo.com/video/1132093494?badge=0" width="400" height="225" frameborder="0" allow="autoplay; fullscreen" style="border-radius:10px;"></iframe>
+            <div class="video-embed">
+                <iframe src="https://player.vimeo.com/video/1132093494?badge=0" frameborder="0" allow="autoplay; fullscreen"></iframe>
             </div>
 
             <h2>🌟 कौन हैं शारिक खान जेआर?</h2>
@@ -171,30 +256,30 @@
                 यह घटना बताती है कि TV और डिजिटल इंडस्ट्री अब एक-दूसरे को पहचान दे रही हैं। ऐसे बड़े क्रॉसओवर आजकल आम हो गये हैं - कोमल भाभी ने अपने व्यस्त शेड्यूल से वक्त निकालकर शारिक खान जेआर को विश किया, जिससे उनका जन्मदिन और भी खास बन गया।
             </p>
         </div>
-        <!-- News share/contact box starts here -->
-<div style="background:#e8f6ff; border-radius:18px; margin:38px 0 0 0; padding:22px 12px; text-align:center; box-shadow:0 3px 10px #00000018;">
-    <h3 style="color:#003c82; font-weight:700; margin-bottom:13px;">
-        क्या आपके पास कोई <span style="color:#006fce;">*तगड़ा न्यूज*</span> या <span style="color:#006fce;">*फोटो/वीडियो*</span> है?
-    </h3>
-    <p style="font-size:1.08rem; margin-bottom:22px;">
-        मसालेदार किस्सा, अपनी गली-मोहल्ले की पॉलिटिक्स, या कोई ज्वलंत समस्या — हमें भेजें WhatsApp या Instagram पर! जो बढ़िया लगेगा वो Jr News पर पब्लिश हो सकता है। नाम और नंबर भी साथ दें.
-    </p>
-    <a href="https://wa.me/9503123294?text=Hello%20Jr%20News%2C%20I%20have%20a%20news%20for%20you." target="_blank" style="display:inline-block; background:#25D366; color:#fff; font-weight:bold; padding:15px 40px; font-size:1.15rem; border-radius:32px; margin:8px 0 16px 0; box-shadow:0 2px 8px #25D36620; text-decoration:none;">
-        📱 WhatsApp पर शेयर करें
-    </a>
-    <br>
-    <a href="https://www.instagram.com/sharik.khan.jr" target="_blank" style="display:inline-block; background:#d6249f; color:#fff; font-weight:bold; padding:13px 38px; font-size:1.13rem; border-radius:32px; margin:9px 0; box-shadow:0 2px 8px #d6249f22; text-decoration:none;">
-        📸 Instagram
-    </a>
-    <a href="https://wa.me/9503123294" target="_blank" style="display:inline-block; background:#22b473; color:#fff; font-weight:bold; padding:13px 38px; font-size:1.13rem; border-radius:32px; margin:9px 10px; box-shadow:0 2px 8px #22b47322; text-decoration:none;">
-        ☎️ WhatsApp
-    </a>
-    <p style="margin-top: 22px; font-size:1rem; color:#555;">
-        साइट क्रेडिट: <a href="https://sharikkhanjr.blogspot.com/" style="color:#006fce; text-decoration:underline;" target="_blank">sharikkhanjr.blogspot.com</a>
-    </p>
-</div>
-<!-- News share/contact box ends here -->
-
-<div class="footer">
-    <p>© 2025 शारिक खान जेआर. सर्वाधिकार सुरक्षित.</p>
-</div>
+        <div class="newsbox-contact">
+            <h3>
+                क्या आपके पास कोई <span style="color:#006fce;">*तगड़ा न्यूज*</span> या <span style="color:#006fce;">*फोटो/वीडियो*</span> है?
+            </h3>
+            <p>
+                मसालेदार किस्सा, अपनी गली-मोहल्ले की पॉलिटिक्स, या कोई ज्वलंत समस्या — हमें भेजें WhatsApp या Instagram पर! जो बढ़िया लगेगा वो Jr News पर पब्लिश हो सकता है। नाम और नंबर भी साथ दें.
+            </p>
+            <a href="https://wa.me/9503123294?text=Hello%20Jr%20News%2C%20I%20have%20a%20news%20for%20you." class="news-btn" target="_blank">
+                📱 WhatsApp पर शेयर करें
+            </a>
+            <br>
+            <a href="https://www.instagram.com/sharik.khan.jr" class="ig-btn" target="_blank">
+                📸 Instagram
+            </a>
+            <a href="https://wa.me/9503123294" class="wa-btn" target="_blank">
+                ☎️ WhatsApp
+            </a>
+            <div class="credit">
+                साइट क्रेडिट: <a href="https://sharikkhanjr.blogspot.com/" target="_blank">sharikkhanjr.blogspot.com</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2025 शारिक खान जेआर. सर्वाधिकार सुरक्षित.</p>
+        </div>
+    </div>
+</body>
+</html>
